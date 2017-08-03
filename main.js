@@ -5,11 +5,12 @@ let display = document.getElementById("display");
 let calcString = "";
 let button = "";
 let ans = calcString;
-display.textContent = calcString;
+
 
 function addCalc() {
   let input = this.textContent;
   calcString += input;
+  display.textContent = calcString;
 }
 
 for (let i = 0; i < calcButtons.length; i++) {
@@ -20,12 +21,13 @@ for (let i = 0; i < calcButtons.length; i++) {
 
 function equals() {
   calcString = eval(calcString);
-  console.log(calcString);
-  clear();
+  display.textContent = calcString;
+  calcString = "";
 }
 
 function clear() {
-  calcString = 0;
+  calcString = "";
+  display.textContent = calcString;
 }
 
 equalsButton.addEventListener('click', equals);

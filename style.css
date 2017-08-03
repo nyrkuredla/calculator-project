@@ -1,12 +1,88 @@
+/*Colors
+light blue: #7BA1B1;
+red: #AE3D2B;
+cream: #EFD1A1;
+eggshell: #F1F1E6;
+dark green: #032706;
+light green: #327D75;
+
+*/
+
 body {
-  background-color: #7BA1B1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F1F1E6;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/564x/67/0a/6c/670a6c8aa3fb78ef7d8bce6fd5085613.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
 h1 {
   font-family: 'Atomic Age', cursive;
+  color: #497775;
 
 }
 
 h2 {
   font-family: 'Condiment', cursive;
+  color: #AE3D2B;
+}
+
+main {
+  width: 30%;
+  height: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+
+.row {
+  display: flex;
+  flex-grow: 1;
+  max-height: 15%;
+
+}
+
+button {
+  flex-grow: 1;
+  max-width: 25%;
+  font-family: 'Atomic Age', cursive;
+  font-size: 1.5em;
+  color: #AE3D2B;
+  background-color: #F1F1E6;
+  box-shadow: none;
+  transition: color background-color;
+  transition-duration: 0.2s;
+}
+
+button:hover {
+  background-color: #327D75;
+  color: #F1F1E6;
+  box-shadow: none;
+}
+
+button:active {
+  color: #AE3D2B;
+}
+
+#display {
+  flex-grow: 3;
+  border: 1px solid #032706;
+  text-align: right;
+  font-family: 'Atomic Age', cursive;
+  font-size: 2em;
+  max-width: 75%;
+  background-color: #F1F1E6;
+  padding: 5px;
+  box-shadow: none;
+
 }
